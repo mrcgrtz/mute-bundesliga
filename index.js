@@ -17,11 +17,13 @@ module.exports = year => {
   for (let i = 0; i < hashtags.length; i++) {
     const splitted = hashtags[i].split('');
     Object.keys(letters).forEach((char, idx) => {
-      letters[char].includes(splitted[idx + 1]) || letters[char].push(splitted[idx + 1]);
+      if (!letters[char].includes(splitted[idx + 1])) {
+        letters[char].push(splitted[idx + 1]);
+      }
     });
   }
 
-  for (let [list] of Object.entries(letters)) {
+  for (const [list] of Object.entries(letters)) {
     letters[list].sort();
   }
 
