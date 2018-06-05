@@ -16,7 +16,7 @@ module.exports = year => {
 
   for (let i = 0; i < hashtags.length; i++) {
     const splitted = hashtags[i].split('');
-    ['first', 'second', 'third'].forEach((char, idx) => {
+    Object.keys(letters).forEach((char, idx) => {
       !letters[char].includes(splitted[idx + 1]) && letters[char].push(splitted[idx + 1]);
     });
   }
