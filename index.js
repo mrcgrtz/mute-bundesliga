@@ -16,15 +16,13 @@ module.exports = year => {
 
   for (let i = 0; i < hashtags.length; i++) {
     const splitted = hashtags[i].split('');
-    letters.first.push(splitted[1]);
-    letters.second.push(splitted[2]);
-    letters.third.push(splitted[3]);
+    ['first', 'second', 'third'].forEach((char, idx) => {
+      !letters[char].includes(splitted[idx + 1]) && letters[char].push(splitted[idx + 1]);
+    });
   }
 
-  for (const list in letters) {
-    if (Object.prototype.hasOwnProperty.call(letters, list)) {
-      letters[list] = letters[list].sort().filter((el, idx, arr) => idx === arr.indexOf(el));
-    }
+  for (let [list] of Object.entries(letters)) {
+    letters[list].sort();
   }
 
   return `#([${letters.first.join('')}][${letters.second.join('')}][${letters.third.join('')}]){2}`;
