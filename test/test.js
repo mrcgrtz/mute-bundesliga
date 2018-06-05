@@ -1,5 +1,5 @@
 import test from 'ava';
-import mute from '.';
+import mute from '..';
 
 test('2015', t => {
   t.falsy(mute(2015));

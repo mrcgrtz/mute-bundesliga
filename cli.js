@@ -14,7 +14,7 @@ const cli = meow(`
     Regular expression: ${chalk.bold('#([BDFHKMRSW][09BCGMORSV][458ABCEFGILV]){2}')}
 `);
 
-const input = cli.input;
+const {input} = cli;
 let regex = '';
 if (input.length > 0) {
   regex = mute(input);
