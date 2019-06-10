@@ -31,15 +31,15 @@
     "twitter"
   ],
   "devDependencies": {
-    "ava": "^0.25.0",
-    "xo": "^0.21.1"
+    "ava": "^2.1.0",
+    "xo": "^0.24.0"
   },
   "xo": {
     "esnext": true,
     "space": true
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "meow": "^5.0.0"
   }
 }
