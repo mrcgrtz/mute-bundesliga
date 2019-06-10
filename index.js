@@ -4,7 +4,7 @@ module.exports = year => {
   let hashtags = [];
   try {
     hashtags = require(`./hashtags/${year}.json`);
-  } catch (err) {
+  } catch (error) {
     return;
   }
 
