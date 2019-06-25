@@ -1,10 +1,24 @@
 import test from 'ava';
 import mute from '..';
 
-test('2015', t => {
+test('an unavailable year', t => {
   t.falsy(mute(2015));
 });
 
-test('2016', t => {
-  t.is(mute(2016), '#([BDFHKMRSW][09BCGMORSV][458ABCEFGILV]){2}');
+// @TODO: Use a loop for the following tests, AVA won’t comply FFS.
+
+test('mute(2016)', t => {
+  t.snapshot(mute(2016));
+});
+
+test('mute(2017)', t => {
+  t.snapshot(mute(2017));
+});
+
+test('mute(2018)', t => {
+  t.snapshot(mute(2018));
+});
+
+test('mute(2019)', t => {
+  t.snapshot(mute(2019));
 });
