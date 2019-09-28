@@ -1,6 +1,6 @@
 {
   "name": "twitter-mute-bundesliga",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "description": "Create a regular expression for muting Bundesliga matches in Twitter apps (like Tweetbot).",
   "license": "MIT",
