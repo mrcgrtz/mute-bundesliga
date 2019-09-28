@@ -4,7 +4,7 @@ module.exports = year => {
   let hashtags = [];
   try {
     hashtags = require(`./hashtags/${year}.json`);
-  } catch (error) {
+  } catch {
     return;
   }
 
@@ -14,8 +14,8 @@ module.exports = year => {
     third: []
   };
 
-  for (let i = 0; i < hashtags.length; i++) {
-    const splitted = hashtags[i].split('');
+  for (const hashtag of hashtags) {
+    const splitted = hashtag.split('');
     Object.keys(letters).forEach((char, idx) => {
       if (!letters[char].includes(splitted[idx + 1])) {
         letters[char].push(splitted[idx + 1]);
