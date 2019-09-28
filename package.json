@@ -14,7 +14,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "scripts": {
     "test": "xo && ava"
@@ -32,7 +32,7 @@
   ],
   "devDependencies": {
     "ava": "^2.2.0",
-    "xo": "^0.24.0"
+    "xo": "^0.25.3"
   },
   "xo": {
     "esnext": true,
