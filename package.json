@@ -32,7 +32,7 @@
   ],
   "devDependencies": {
     "ava": "^2.2.0",
-    "xo": "^0.25.3"
+    "xo": "^0.26.0"
   },
   "xo": {
     "esnext": true,
