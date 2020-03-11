@@ -1,5 +1,5 @@
-import test from 'ava';
-import mute from '..';
+const test = require('ava');
+const mute = require('..');
 
 test('an unavailable year', t => {
   t.falsy(mute(2015));
