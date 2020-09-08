@@ -32,14 +32,14 @@
   ],
   "devDependencies": {
     "ava": "^3.5.1",
-    "xo": "^0.28.0"
+    "xo": "^0.33.1"
   },
   "xo": {
     "esnext": true,
     "space": true
   },
   "dependencies": {
-    "chalk": "^3.0.0",
-    "meow": "^6.1.1"
+    "chalk": "^4.1.0",
+    "meow": "^7.1.1"
   }
 }
