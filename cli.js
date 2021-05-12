@@ -26,6 +26,6 @@ if (regex) {
 	console.log(regex);
 	process.exit(0);
 } else {
-	console.log('No regular expression available.');
+	console.error('No regular expression available.');
 	process.exit(2);
 }
