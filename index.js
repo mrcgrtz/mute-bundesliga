@@ -1,31 +1,31 @@
-'use strict';
+import allHashtags from './hashtags/index.js';
 
-module.exports = year => {
-  let hashtags = [];
-  try {
-    hashtags = require(`./hashtags/${year}.json`);
-  } catch {
-    return;
-  }
+const mute = year => {
+	const hashtags = allHashtags[year];
+	if (!hashtags) {
+		return;
+	}
 
-  const letters = {
-    first: [],
-    second: [],
-    third: []
-  };
+	const letters = {
+		first: [],
+		second: [],
+		third: []
+	};
 
-  for (const hashtag of hashtags) {
-    const splitted = hashtag.split('');
-    Object.keys(letters).forEach((char, idx) => {
-      if (!letters[char].includes(splitted[idx + 1])) {
-        letters[char].push(splitted[idx + 1]);
-      }
-    });
-  }
+	for (const hashtag of hashtags) {
+		const splitted = hashtag.split('');
+		for (const [index, char] of Object.keys(letters).entries()) {
+			if (!letters[char].includes(splitted[index + 1])) {
+				letters[char].push(splitted[index + 1]);
+			}
+		}
+	}
 
-  for (const [list] of Object.entries(letters)) {
-    letters[list].sort();
-  }
+	for (const [list] of Object.entries(letters)) {
+		letters[list].sort();
+	}
 
-  return `#([${letters.first.join('')}][${letters.second.join('')}][${letters.third.join('')}]){2}`;
+	return `#([${letters.first.join('')}][${letters.second.join('')}][${letters.third.join('')}]){2}`;
 };
+
+export default mute;

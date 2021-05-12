@@ -14,10 +14,13 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=15"
   },
+  "type": "module",
   "scripts": {
-    "test": "xo && ava"
+    "format": "xo --fix",
+    "test": "xo && c8 ava",
+    "coveralls": "c8 report --reporter=text-lcov | coveralls"
   },
   "files": [
     "index.js",
@@ -30,16 +33,14 @@
     "tweetbot",
     "twitter"
   ],
-  "devDependencies": {
-    "ava": "^3.5.1",
-    "xo": "^0.33.1"
-  },
-  "xo": {
-    "esnext": true,
-    "space": true
-  },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "meow": "^7.1.1"
+    "chalk": "^4.1.1",
+    "meow": "^10.0.0"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "c8": "^7.7.2",
+    "coveralls": "^3.1.0",
+    "xo": "^0.40.1"
   }
 }
