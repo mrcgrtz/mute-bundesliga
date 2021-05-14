@@ -20,6 +20,7 @@
   "scripts": {
     "format": "xo --fix",
     "test": "xo && c8 ava",
+    "coverage": "c8 report --reporter=text-lcov",
     "coveralls": "c8 report --reporter=text-lcov | coveralls"
   },
   "files": [

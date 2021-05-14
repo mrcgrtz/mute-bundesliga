@@ -21,7 +21,9 @@ jobs:
     - name: Installation
       run: npm ci
     - name: Test
-      run: npm test
+      run: |
+        npm test
+        npm run-script coverage
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
