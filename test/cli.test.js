@@ -4,8 +4,8 @@ import execa from 'execa';
 const options = {pwd: '../'};
 
 test('Input without value assumes current year', async t => {
-	const {stdout} = await t.throwsAsync(() => execa('./cli.js', [], options));
-	t.is(stdout, `No year provided, assuming you meant ${new Date().getFullYear()}.`);
+	const {stdout} = await execa('./cli.js', [], options);
+	t.assert(stdout.startsWith(`No year provided, assuming you meant ${new Date().getFullYear()}.`));
 });
 
 test('Input with invalid value', async t => {
