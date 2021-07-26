@@ -9,7 +9,7 @@ const mute = year => {
 	const letters = {
 		first: [],
 		second: [],
-		third: []
+		third: [],
 	};
 
 	for (const hashtag of hashtags) {

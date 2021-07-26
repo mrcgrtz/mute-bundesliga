@@ -9,7 +9,7 @@ const allHashtags = {
 	2017: h2017,
 	2018: h2018,
 	2019: h2019,
-	2020: h2020
+	2020: h2020,
 };
 
 export default allHashtags;

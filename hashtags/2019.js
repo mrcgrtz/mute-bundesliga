@@ -16,7 +16,7 @@ const hashtags = [
 	'#SCF',
 	'#SCP',
 	'#SGE',
-	'#WOB'
+	'#WOB',
 ];
 
 export default hashtags;
