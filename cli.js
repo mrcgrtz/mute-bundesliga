@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import process from 'node:process';
 import meow from 'meow';
 import chalk from 'chalk';
 import mute from './index.js';
