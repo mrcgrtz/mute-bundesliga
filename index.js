@@ -13,7 +13,7 @@ const mute = year => {
 	};
 
 	for (const hashtag of hashtags) {
-		const splitted = hashtag.split('');
+		const splitted = [...hashtag];
 		for (const [index, char] of Object.keys(letters).entries()) {
 			if (!letters[char].includes(splitted[index + 1])) {
 				letters[char].push(splitted[index + 1]);
