@@ -14,7 +14,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=15"
+    "node": ">=16"
   },
   "type": "module",
   "scripts": {
