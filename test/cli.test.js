@@ -1,12 +1,11 @@
 import test from 'ava';
 import {execa} from 'execa';
-import stripAnsi from 'strip-ansi';
 
 const options = {pwd: '../'};
 
 test('Input without value assumes current year', async t => {
 	const {stdout} = await execa('./cli.js', [], options);
-	t.assert(stdout.startsWith(stripAnsi(`No year provided, assuming you meant ${new Date().getFullYear()}.`)));
+	t.assert(stdout.startsWith(`No year provided, assuming you meant ${new Date().getFullYear()}.`));
 });
 
 test('Input with invalid value', async t => {
