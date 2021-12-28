@@ -4,10 +4,7 @@
   "private": true,
   "description": "Create a regular expression for muting Bundesliga matches in Twitter apps (like Tweetbot).",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dreamseer/twitter-mute-bundesliga.git"
-  },
+  "repository": "github:mrcgrtz/twitter-mute-bundesliga",
   "author": {
     "name": "Marc Görtz",
     "email": "git@marcgoertz.de",
