@@ -2,7 +2,7 @@
 
 import process from 'node:process';
 import meow from 'meow';
-import chalk from 'chalk';
+import pico from 'picocolors';
 import mute from './index.js';
 
 const cli = meow(`
@@ -19,7 +19,7 @@ if (input.length > 0) {
 	regex = mute(input);
 } else {
 	const now = new Date().getFullYear();
-	console.log(`No year provided, assuming you meant ${chalk.bold(now)}.`);
+	console.log(`No year provided, assuming you meant ${pico.bold(now)}.`);
 	regex = mute(now);
 }
 
