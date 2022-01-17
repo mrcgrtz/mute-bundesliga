@@ -1,4 +1,4 @@
-name: Default
+name: Test
 
 on:
   push:
@@ -8,10 +8,13 @@ on:
 
 jobs:
   test:
+
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        node-version: [lts/*,17.x]
+        node-version: [lts/*, 17.x]
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
