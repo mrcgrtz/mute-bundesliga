@@ -1,0 +1,31 @@
+html {
+	height: 100%;
+	color: slategray;
+	background-color: ghostwhite;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-align: center;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 1em;
+	height: 100%;
+}
+
+main {
+	padding: 1em;
+	background-color: white;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+pre {
+	color: rebeccapurple;
+	font-size: 3rem;
+	white-space: normal;
+}

@@ -2,13 +2,13 @@
 
 import process from 'node:process';
 import meow from 'meow';
-import mute from './index.js';
+import mute from './src/mute.js';
 
 const cli = meow(`
-  Usage: cli.js [YEAR]
+  Usage: cli.mjs [YEAR]
 
   Example:
-    $ cli.js 2016
+    $ cli.mjs 2016
     ${mute(2016)}
 `, {importMeta: import.meta});
 

@@ -1,5 +1,5 @@
 import test from 'ava';
-import mute from '../index.js';
+import mute from '../src/mute.js';
 
 test('an unavailable year', t => {
 	t.falsy(mute(2015));

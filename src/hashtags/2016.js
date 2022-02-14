@@ -4,19 +4,19 @@ const hashtags = [
 	'#BRE',
 	'#BSC',
 	'#BVB',
-	'#DSC',
+	'#D98',
 	'#FCA',
 	'#FCB',
-	'#FCU',
+	'#FCI',
 	'#HOF',
+	'#HSV',
 	'#KOE',
 	'#M05',
 	'#RBL',
 	'#S04',
 	'#SCF',
 	'#SGE',
-	'#VFB',
 	'#WOB',
 ];
 
-export default hashtags;
+module.exports = hashtags;

@@ -1,4 +1,4 @@
-import allHashtags from './hashtags/index.js';
+const allHashtags = require('./hashtags/index.js');
 
 const mute = year => {
 	const hashtags = allHashtags[year];
@@ -28,4 +28,4 @@ const mute = year => {
 	return `#([${letters.first.join('')}][${letters.second.join('')}][${letters.third.join('')}]){2}`;
 };
 
-export default mute;
+module.exports = mute;
