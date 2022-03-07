@@ -5,6 +5,8 @@
 <title>Mute Bundesliga</title>
 <script src="https://gitcdn.link/cdn/sudodoki/copy-button/v2.0.0/bundled.min.js"></script>
 <style>
+@import url('http://fonts.googleapis.com/css?family=Cabin+Condensed:500&text=Fork%20me%20on%20GitHub');
+
 html {
 	height: 100%;
 	color: slategray;
@@ -19,6 +21,7 @@ body {
 	justify-content: center;
 	margin: 0 1em;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 main {
@@ -37,10 +40,44 @@ pre {
 	white-space: normal;
 }
 
+.ribbon {
+	position: absolute; 
+	inset-block-start: 42px;
+	inset-inline-end: -42px;
+	inline-size: 200px;
+	padding-block: 1px;
+	color: ghostwhite;
+	background-color: black;
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-weight: 500;
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+	transform: rotate(45deg);
+}
+
+.ribbon a:link,
+.ribbon a:visited, 
+.ribbon a:hover,
+.ribbon a:focus,
+.ribbon a:active {
+	display: block;
+	padding-block: 1px;
+	block-size: 1.5rem;
+	line-height: 1.5;
+	color: inherit;  
+	text-decoration: none;
+	border: 1px solid rgb(255 255 255 / 30%);
+	text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
 </style>
 
 <main>
 	<h1>Mute tweets about Bundesliga matches using this regex:</h1>
 	<pre><code id="regex">#([BDFHKMRSVW][0BCFGMOSV][45ABCEFGLU]){2}</code></pre>
-	<copy-button target-element="#regex"></copy-button>
+	<copy-button target-element="#regex">Copy to clipboard</copy-button>
 </main>
+
+<footer class="ribbon">
+	<a href="https://github.com/mrcgrtz/twitter-mute-bundesliga">Fork me on GitHub</a>
+</footer>
