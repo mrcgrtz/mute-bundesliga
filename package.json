@@ -31,7 +31,7 @@
     "twitter"
   ],
   "dependencies": {
-    "meow": "^10.1.5"
+    "meow": "^11.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
