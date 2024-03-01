@@ -30,7 +30,7 @@
     "regex"
   ],
   "dependencies": {
-    "meow": "^13.1.0"
+    "meow": "^13.2.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
