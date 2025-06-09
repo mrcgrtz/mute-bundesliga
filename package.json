@@ -39,14 +39,12 @@
     "execa": "^9.6.0",
     "xo": "^1.0.5"
   },
-  "xo": {
-    "overrides": [
-      {
-        "files": "**/*.js",
-        "rules": {
-          "unicorn/prefer-module": "off"
-        }
+  "xo": [
+    {
+      "files": "**/*.js",
+      "rules": {
+        "unicorn/prefer-module": "off"
       }
-    ]
-  }
+    }
+  ]
 }
