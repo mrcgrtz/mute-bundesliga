@@ -1,9 +1,9 @@
-const h2016 = require('./2016.js');
-const h2017 = require('./2017.js');
-const h2018 = require('./2018.js');
-const h2019 = require('./2019.js');
-const h2020 = require('./2020.js');
-const h2021 = require('./2021.js');
+import h2016 from './2016.js';
+import h2017 from './2017.js';
+import h2018 from './2018.js';
+import h2019 from './2019.js';
+import h2020 from './2020.js';
+import h2021 from './2021.js';
 
 const allHashtags = {
 	2016: h2016,
@@ -14,4 +14,4 @@ const allHashtags = {
 	2021: h2021,
 };
 
-module.exports = allHashtags;
+export default allHashtags;

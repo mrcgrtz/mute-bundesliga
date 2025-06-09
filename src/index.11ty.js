@@ -1,5 +1,5 @@
-const mute = require('./mute.js');
-const allHashtags = require('./hashtags/index.js');
+import mute from './mute.js';
+import allHashtags from './hashtags/index.js';
 
 class Main {
 	constructor() {
@@ -19,4 +19,4 @@ class Main {
 	}
 }
 
-module.exports = Main;
+export default Main;

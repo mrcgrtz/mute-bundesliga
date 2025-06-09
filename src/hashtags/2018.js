@@ -19,4 +19,4 @@ const hashtags = [
 	'#WOB',
 ];
 
-module.exports = hashtags;
+export default hashtags;

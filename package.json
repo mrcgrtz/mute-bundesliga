@@ -11,8 +11,9 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=20"
   },
+  "type": "module",
   "scripts": {
     "build": "npx eleventy --input=src --output=dist --formats=11ty.js,njk",
     "format": "xo --fix",
@@ -38,13 +39,5 @@
     "c8": "^10.1.3",
     "execa": "^9.6.0",
     "xo": "^1.0.5"
-  },
-  "xo": [
-    {
-      "files": "**/*.js",
-      "rules": {
-        "unicorn/prefer-module": "off"
-      }
-    }
-  ]
+  }
 }
