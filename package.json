@@ -11,7 +11,7 @@
     "url": "https://marcgoertz.de/"
   },
   "engines": {
-    "node": ">=20.17"
+    "node": ">=24"
   },
   "type": "module",
   "scripts": {
@@ -39,5 +39,8 @@
     "c8": "^11.0.0",
     "execa": "^9.6.1",
     "xo": "^1.2.3"
+  },
+  "overrides": {
+    "yargs": "^18.0.0"
   }
 }
