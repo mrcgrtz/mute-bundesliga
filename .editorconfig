@@ -37,3 +37,10 @@ trim_trailing_whitespace = false
 # https://github.com/npm/npm/pull/3180#issuecomment-16336516
 indent_style = space
 indent_size = 2
+
+# ######################################################################
+# # YAML FILES                                                         #
+# ######################################################################
+[*.yml]
+indent_style = space
+indent_size = 2
