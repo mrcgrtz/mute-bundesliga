@@ -1,7 +1,7 @@
 import mute from './mute.js';
 import allHashtags from './hashtags/index.js';
 
-class Main {
+export default class Main {
 	constructor() {
 		const current = Object.keys(allHashtags).pop();
 		this.regex = mute(current);
@@ -18,5 +18,3 @@ class Main {
 		return null;
 	}
 }
-
-export default Main;
