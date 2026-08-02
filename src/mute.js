@@ -1,6 +1,6 @@
 import allHashtags from './hashtags/index.js';
 
-const mute = year => {
+export default function mute(year) {
 	const hashtags = allHashtags[year];
 	if (!hashtags) {
 		return;
@@ -21,11 +21,9 @@ const mute = year => {
 		}
 	}
 
-	for (const [list] of Object.entries(letters)) {
-		letters[list].sort();
+	for (const value of Object.values(letters)) {
+		value.sort((a, b) => a.localeCompare(b));
 	}
 
 	return `#([${letters.first.join('')}][${letters.second.join('')}][${letters.third.join('')}]){2}`;
-};
-
-export default mute;
+}
