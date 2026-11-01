@@ -30,7 +30,7 @@
     "meow": "^14.1.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy": "^3.1.7",
     "ava": "^8.0.1",
     "c8": "^12.0.0",
     "execa": "^10.0.1",
